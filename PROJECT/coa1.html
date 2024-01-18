@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./coa.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:ital,wght@1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kavoon:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bona Nova:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JejuMyeongjo:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+    
+        .container {
+            max-width: 400px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1, h2, h6 {
+            color: #333;
+        }
+    
+        .subject-section {
+            margin-top: 30px;
+        }
+    
+        .upload-section, .download-section {
+            margin-top: 20px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+    
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        ul {
+            list-style-type:none;
+            padding: 0;
+        }
+    
+        li {
+            margin-bottom: 10px;
+        }
+    
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+    
+            button {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+    <div class="slide-169-4">
+      <header class="slide-169-4-inner">
+        <div class="rectangle-parent9">
+          <div class="frame-child15"></div>
+          <img
+            class="learning-1-icon"
+            loading="eager"
+            alt=""
+            src="bulb.png"
+          />
+
+          <div class="computer-organization-and-arch-wrapper">
+            <i class="computer-organization-and"
+              >Computer Organization and Architecture</i
+            >
+          </div>
+        </div>
+      </header>
+      <i class="upload">Upload</i>
+      <main class="slide-169-4-child">
+        <section class="frame-section">
+          <div class="computer-1-parent">
+            <img
+              class="computer-1-icon"
+              loading="eager"
+              alt=""
+              src="coa-removebg-preview.png"
+            />
+
+            <div class="rectangle-parent10">
+              <div class="frame-child16"></div>
+              <div class="coa-bcs302-2nd-year-section-c">
+                2023-24_COA_BCS302_2nd Year_Section-C(AI)
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent7">
+            <div class="frame-parent8">
+              <div class="rectangle-parent11">
+                <div class="frame-child17"></div>
+                <div class="notes-wrapper">
+                  <div class="notes">
+                    <span><h1><h1>Notes </h1></h1></span>
+                    <span class="span"> </span>
+                  </div>
+                </div>
+                <img
+                  class="image-1-icon"
+                  loading="eager"
+                  alt=""
+                  src="notes.png"
+                />
+              </div>
+              <div class="frame-wrapper5">
+                <div class="rectangle-parent12">
+                  <div class="frame-child18"></div>
+                  <div class="rectangle-parent13">
+                    <div class="frame-child19"></div>
+                    <div class="container">
+  
+
+                        <!-- File Upload and Download Section for Computer Architecture -->
+                        <div class="subject-section" id="coa">
+                           
+                            <div class="upload-section">
+                                <form id="coaUploadForm" enctype="multipart/form-data">
+                                    <input type="file" id="coaFileInput" name="file" accept=".pdf, .doc, .txt">
+                                    <button type="button" onclick="uploadFile('coa')">Upload</button>
+                                </form>
+                            </div>
+                            <div class="download-section">
+                                <h6>Download Files</h6>
+                                <ul id="coaFileList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="rectangle-parent14">
+                      <div class="frame-child20"></div>
+                      <i class="upload1">Upload</i>
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-parent9">
+              <button class="rectangle-parent15">
+                <div class="frame-child21"></div>
+                <div class="papers">Papers</div>
+                <img
+                  class="image-2-icon"
+                  alt=""
+                  src="papers-removebg-preview.png"
+                />
+              </button>
+              <div class="rectangle-parent16">
+                <div class="frame-child22"></div>
+                <div class="container">
+  
+
+                  <!-- File Upload and Download Section for Computer Architecture -->
+                  <div class="subject-section" id="coa">
+                     
+                      <div class="upload-section">
+                          <form id="coaUploadForm" enctype="multipart/form-data">
+                              <input type="file" id="coaFileInput" name="file" accept=".pdf, .doc, .txt">
+                              <button type="button" onclick="uploadFile('coa')">Upload</button>
+                          </form>
+                      </div>
+                      <div class="download-section">
+                          <h6>Download Files</h6>
+                          <ul id="coaFileList"></ul>
+                      </div>
+                  </div>
+              </div>
+                <!-- <button class="rectangle-parent17">
+                  <div class="frame-child23"></div>
+                  <i class="upload2">Upload</i>
+                </button> -->
+              </div>
+            </div>
+            <div class="assign-frame-parent">
+              <button class="assign-frame">
+                <div class="assign-frame-child"></div>
+                <div class="assignment">Assignment</div>
+                <div class="image-3-wrapper">
+                  <img
+                    class="image-3-icon"
+                    alt=""
+                    src="assignment-removebg-preview.png"
+                  />
+                </div>
+              </button>
+              <div class="upload-frame">
+                <div class="upload-frame-child"></div>
+                <div class="container">
+  
+
+                  <!-- File Upload and Download Section for Computer Architecture -->
+                  <div class="subject-section" id="coa">
+                     
+                      <div class="upload-section">
+                          <form id="coaUploadForm" enctype="multipart/form-data">
+                              <input type="file" id="coaFileInput" name="file" accept=".pdf, .doc, .txt">
+                              <button type="button" onclick="uploadFile('coa')">Upload</button>
+                          </form>
+                      </div>
+                      <div class="download-section">
+                          <h6>Download Files</h6>
+                          <ul id="coaFileList"></ul>
+                      </div>
+                  </div>
+              </div>
+                <!-- <button class="upload-button">
+                  <div class="upload-button-child"></div>
+                  <i class="upload3">Upload</i>
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFileList('coa');
+            // Load file lists for other subjects here
+        });
+    
+        function uploadFile(subject) {
+            const fileInput = document.getElementById(`${subject}FileInput`);
+            
+            // Get the uploaded file
+            const file = fileInput.files[0];
+    
+            if (file) {
+                // Display the uploaded file in the list
+                displayUploadedFile(subject, file);
+    
+                // Clear the file input
+                fileInput.value = '';
+            }
+        }
+    
+        function displayUploadedFile(subject, file) {
+            const fileListContainer = document.getElementById(`${subject}FileList`);
+            const listItem = document.createElement('li');
+    
+            const fileLink = document.createElement('a');
+            fileLink.href = URL.createObjectURL(file);
+            fileLink.target = '_blank';
+            fileLink.textContent = file.name;
+    
+            listItem.appendChild(fileLink);
+            fileListContainer.appendChild(listItem);
+        }
+    </script>
+    
+  </body>
+</html>

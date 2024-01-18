@@ -1,0 +1,161 @@
+.interactive-learning {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .interactive-learning-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-xl) 0 0;
+  }
+  .our-college-website {
+    align-self: stretch;
+    position: relative;
+  }
+  .explore-now,
+  .frame-child1 {
+    position: relative;
+    cursor: pointer;
+  }
+  .frame-child1 {
+    align-self: stretch;
+    border-radius: var(--br-xs);
+    background-color: #fb4f4f;
+    width: 376px;
+    max-width: 100%;
+  }
+  .explore-now {
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-bona-nova);
+    color: #fffcfc;
+    text-align: left;
+    z-index: 1;
+    margin-left: -302px;
+  }
+  .frame-container,
+  .rectangle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .rectangle-container {
+    cursor: pointer;
+    border: 0;
+    padding: 0 var(--padding-xl) 0 0;
+    background-color: transparent;
+    align-self: stretch;
+    width: 396px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .frame-container {
+    width: 506px;
+    height: 89px;
+    align-items: flex-start;
+  }
+  .our-college-website-offers-a-u-parent {
+    width: 794px;
+    align-items: center;
+    gap: 71px;
+    font-size: var(--font-size-21xl);
+    color: #231a1a;
+    font-family: var(--font-bona-nova);
+  }
+  .frame-group,
+  .our-college-website-offers-a-u-parent,
+  .slide-169-1-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-group {
+    align-items: flex-end;
+    gap: 93px;
+  }
+  .slide-169-1-inner {
+    align-items: flex-start;
+    padding: var(--padding-17xl) 0 0;
+    box-sizing: border-box;
+    min-width: 823px;
+  }
+  .icon,
+  .slide-169-1 {
+    position: relative;
+    overflow: hidden;
+  }
+  .icon {
+    flex: 1;
+    max-width: 100%;
+    height: 778px;
+    object-fit: cover;
+    min-width: 678px;
+  }
+  .slide-169-1 {
+    background-color: var(--color-white);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-132xl) 0 var(--padding-132xl) var(--padding-14xl);
+    box-sizing: border-box;
+    gap: 21px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 80px;
+    color: var(--color-black);
+    font-family: var(--font-kavoon);
+  }
+  @media screen and (max-width: 1725px) {
+    .slide-169-1-inner {
+      flex: 1;
+    }
+    .slide-169-1 {
+      flex-wrap: wrap;
+      padding-left: var(--padding-xl);
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .explore-now,
+    .interactive-learning,
+    .our-college-website {
+      font-size: var(--font-size-5xl);
+    }
+    .our-college-website-offers-a-u-parent {
+      gap: var(--gap-lg);
+    }
+    .frame-group {
+      gap: var(--gap-4xl);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .interactive-learning {
+      font-size: var(--font-size-21xl);
+    }
+    .explore-now,
+    .our-college-website {
+      font-size: var(--font-size-13xl);
+    }
+    .our-college-website-offers-a-u-parent {
+      gap: var(--gap-16xl);
+    }
+    .frame-group {
+      gap: var(--gap-27xl);
+    }
+    .icon {
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .slide-169-1-inner {
+      min-width: 100%;
+    }
+  }
